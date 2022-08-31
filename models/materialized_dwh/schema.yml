@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: employee_names
+    description: '{{ doc("table_employee_names") }}'
     columns:
       - name: employee_id
         tests:
