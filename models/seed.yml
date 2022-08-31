@@ -1,0 +1,14 @@
+version: 2
+
+seeds:
+  - name: jobs_jp
+    description: A mapping for job_id to jp jobs title
+    columns:
+      - name: job_id
+        tests:
+          - unique
+          - not_null
+      - name: job_title_jp
+        tests:
+          - unique
+          - not_null
