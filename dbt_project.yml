@@ -16,4 +16,5 @@ clean-targets: [target, dbt_packages]
 
 models:
   dbt_training:
-    example:
+    materialized_dwh:
+      +materialized: table
