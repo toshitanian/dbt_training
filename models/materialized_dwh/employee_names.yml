@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: employee_names
+    columns:
+      - name: employee_id
+        tests:
+        - unique
+        - not_null
+        - accepted_values:
+            values: ['101', '102', '103']
+        - is_not_negative
